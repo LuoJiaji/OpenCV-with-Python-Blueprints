@@ -1,5 +1,5 @@
 # OpenCV with Python Blueprints
-code for “OpenCV with Python Blueprints” using Python3
+code for 《OpenCV with Python Blueprints》 using Python3
 
 
 ### Reference
