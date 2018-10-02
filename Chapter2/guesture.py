@@ -94,7 +94,7 @@ defects = cv2.convexityDefects(max_contour, hull)
 
 #cv2.imshow('a', img)
 
-contours = max_contour
+#contours = max_contour
 img_draw = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
 if defects is None:
     print(0)
@@ -113,9 +113,9 @@ num_fingers = 1
 for i in range(defects.shape[0]):
     # each defect point is a 4-tuple
     start_idx, end_idx, farthest_idx, _ = defects[i, 0]
-    start = tuple(contours[start_idx][0])
-    end = tuple(contours[end_idx][0])
-    far = tuple(contours[farthest_idx][0])
+    start = tuple(max_contour[start_idx][0])
+    end = tuple(max_contour[end_idx][0])
+    far = tuple(max_contour[farthest_idx][0])
 
     # draw the hull
     cv2.line(img_draw, start, end, [0, 255, 0], 2)
