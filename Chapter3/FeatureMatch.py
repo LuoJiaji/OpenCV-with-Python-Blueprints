@@ -51,4 +51,6 @@ cv2.imshow('match',img_match)
 cv2.waitKey(0)
 
 
+# 书里面 关于Homography estimation 的代码复现之后结果不对，需要后续研究一下
+
 # reference https://www.jianshu.com/p/1f6195352b26
