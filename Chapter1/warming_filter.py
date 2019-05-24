@@ -16,7 +16,7 @@ def create_LUT_8UC1( x, y):
     return spl(range(256))
     
     
-img_rgb = cv2.imread('me.jpg')
+img_rgb = cv2.imread('T-MAC.jpg')
 img_rgb = cv2.resize(img_rgb, (540, 720))
 cv2.imshow('origin',img_rgb)
 
